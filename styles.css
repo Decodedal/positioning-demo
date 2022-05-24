@@ -65,3 +65,28 @@ border-radius: 100%;
 body{
     height: 200vh;
 }
+.c1{
+    height:200px;
+    width: 200px;
+    position:absolute;
+    background-color: crimson;
+    border-radius: 100%;
+    top: 2%;
+    left: 2%;
+}
+.c2{
+    height:200px;
+    width: 200px;
+    position:absolute;
+    background-color: rgb(220, 130, 20);
+    border-radius: 100%;
+    top: 1%;
+    left:1%;
+}
+.c3{
+    height:200px;
+    width: 200px;
+    position:absolute;
+    background-color: rgb(220, 193, 20);
+    border-radius: 100%;
+}
