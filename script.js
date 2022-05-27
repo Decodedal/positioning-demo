@@ -6,10 +6,13 @@ let c5 = document.querySelector(".c5")
 let c6 = document.querySelector(".c6")
 let c7 = document.querySelector(".c7")
 
-let test = document.querySelector(".i1")
+let i1 = document.querySelector(".i1")
 let i2 = document.querySelector(".i2")
 let i3 = document.querySelector(".i3")
 let i4 = document.querySelector(".i4")
+let score = 0; 
+let bugs = 0;
+let playAgain = document.querySelector("#again");
 
 circle.addEventListener("click",function(){
     console.log("hi")
@@ -34,9 +37,19 @@ const onMouseMove = (e) =>{
 
   let group = document.querySelector("circles")
   
-  test.addEventListener("mouseover", function( event ) {
-    // highlight the mouseover target
-    event.target.style.opacity = "0";
+
+var btns = document.querySelectorAll('.insect');
+for (var i = 0; i < btns.length; i++) {
+	btns[i].addEventListener("mouseover", function (event) {
+		event.target.style.opacity = "0";
     event.target.style.transform = "rotate(360deg)";
-  }
-) 
+    document.querySelector("#score").innerHTML =  score += 50;
+    document.querySelector("#bugs").innerHTML = bugs +=1;
+	}, false);
+}
+playAgain.addEventListener("click",function(){
+    for (var i = 0; i < btns.length; i++){
+        btns[i].style.opacity = "1";
+    }
+    
+})
