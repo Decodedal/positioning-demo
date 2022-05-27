@@ -6,6 +6,11 @@ let c5 = document.querySelector(".c5")
 let c6 = document.querySelector(".c6")
 let c7 = document.querySelector(".c7")
 
+let test = document.querySelector(".i1")
+let i2 = document.querySelector(".i2")
+let i3 = document.querySelector(".i3")
+let i4 = document.querySelector(".i4")
+
 circle.addEventListener("click",function(){
     console.log("hi")
 })
@@ -28,8 +33,10 @@ const onMouseMove = (e) =>{
   document.addEventListener('mousemove', onMouseMove);
 
   let group = document.querySelector("circles")
-
-//   group.addEventListener("click",function(){
-//       console.log("hi");
-//       if{}
-//   })
+  
+  test.addEventListener("mouseover", function( event ) {
+    // highlight the mouseover target
+    event.target.style.opacity = "0";
+    event.target.style.transform = "rotate(360deg)";
+  }
+) 

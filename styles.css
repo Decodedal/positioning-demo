@@ -127,3 +127,37 @@ body{
     border-radius: 100%;
     transition: all .7s;
 }
+.insect{
+    height: 50px;
+    width: 50px;
+}
+.i1{
+    position: relative;
+    top: 50%;
+    left: 40%;
+    opacity: 1;
+    transition: all .5s;
+    transform: rotate();
+}
+.i2{
+    position: relative;
+    top: 20%;
+    left: 33%;
+    opacity: 1;
+    transition: all .5s;
+    transform: rotate();
+}
+.i3{
+    position: relative;
+    top: 70%;
+    left: 60%;
+    transition: all .5s;
+    transform: rotate();
+}
+.i4{
+    position: relative;
+    top: 22%;
+    left: 44%;
+    transition: all .5s;
+    transform: rotate();
+}
