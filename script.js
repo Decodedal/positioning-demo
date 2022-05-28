@@ -13,7 +13,10 @@ let i4 = document.querySelector(".i4")
 let score = 0; 
 let bugs = 0;
 let playAgain = document.querySelector("#again");
-let scoreNow  = document.querySelector("#score")
+let scoreNow  = document.querySelector("#score");
+let lifes = 5 
+let lifeLeft = document.querySelector("#life") ;
+
 
 function getRandomInt(min, max) {
     min = Math.ceil(min);
@@ -57,14 +60,30 @@ for (var i = 0; i < btns.length; i++) {
     console.log(score);
 	}, false);
 }
+var bird = document.querySelectorAll(".bird");
+for (var i = 0; i < bird.length; i++) {
+	bird[i].addEventListener("mouseover", function (){
+    lifeLeft.innerHTML = lifes -= 1;
+    if (lifes <= 0){
+        document.querySelector(".gameover").style.display = "flex"
+    }    
+}
+    )
+   
+}
+
 playAgain.addEventListener("click",function(){
     for (var i = 0; i < btns.length; i++){
-        let posA = getRandomInt(10,90)
-        let posB = getRandomInt(10,90)
+        let posA = getRandomInt(10,90);
+        let posB = getRandomInt(10,90);
+        let birA = getRandomInt(10,90);
+        let birB = getRandomInt(10,90);
         btns[i].style.opacity = "1";
         btns[i].style.transform = "rotate(0deg)"
         btns[i].style.top = posA + "%" 
         btns[i].style.left = posB + "%" 
+        bird[i].style.top = birA +"%"
+        bird[i].style.left = birB + "%"
         console.log(posA , posB)
     }
 }
@@ -82,15 +101,9 @@ function reveal(){
 }
 }
 
-// function grow(){
-//     for(let i = 0; i<group.length; i++){
-//        if(score >= 200){
-//         group[i].style.width = 800 + "px";
-//         group[i].style.height = 800 + "px" 
-//         }
-//     }
-// }
-let rainbow = document.querySelector("h1")
-let colors = ["red", "orange", "yellow", "Green", "blue", "purple","violet"]
-let bow = rainbow.innerhtml.split(" ")
-console.log(bow)
+let over = document.querySelector("#over")
+over.addEventListener("click",function(){
+    // document.querySelector(".gameover").style.display = "none"
+    window.location.reload();
+
+})

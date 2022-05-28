@@ -189,4 +189,57 @@ header{
     color: white;
     background-image:linear-gradient(to right, red,orange,yellow,green,blue,indigo,violet);;
 }
+.bird{
+    width: 10vw;
+    height: 15vh;
+    animation: mymove 3s infinite;
+    
+}
+@keyframes mymove {
+    0%{
+        transform: translateX(0);
+    }
+    50%{
+        transform: translate(150%);
+    }
+    100%{
+        transform: translateX(300%);
+        transform: scaleX(-1);
+    }
+    
+}
 
+.b1{
+    position: absolute;
+    top: 30%;
+    left:30%;
+}
+.b2{
+    position: absolute;
+    top: 50%;
+    left:20%;
+}
+.b3{
+    position: absolute;
+    top: 70%;
+    left:50%;
+}
+.b4{
+    position: absolute;
+    top: 30%;
+    left:80%;
+}
+
+.gameover{
+    display: none;
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    background-color: brown;
+    justify-content: center;
+    align-items: center;
+}
+p{
+    font-size: xx-large;
+
+}
