@@ -59,16 +59,17 @@ z-index: 10;
 */
 .parent{
     position:relative;
-    background-color: gray;
+    background-image: url("https://www.scotts.com/sites/g/files/oydgjc106/files/styles/scotts_asset_image_720_440/public/asset_images/photo_14598%20%281%29.jpg?itok=FmwtvQgo");
     height: 100vh;
     width:100vw;
 } 
 body{
-    height: 200vh;
+    height: 100vh;
+    width: 100vw;
 }
 .c1{
-    width: 100px;
-    height:100px;
+    width: 50px;
+    height:50px;
     position:absolute;
     background-color: red;
     border-radius: 100%;
@@ -78,8 +79,8 @@ body{
 
 }
 .c2{
-    height:100px;
-    width: 100px;
+    height:50px;
+    width: 50px;
     position:absolute;
     background-color: orange;
     border-radius: 100%;
@@ -88,51 +89,55 @@ body{
     transition: all .2s;
 }
 .c3{
-    height:100px;
-    width: 100px;
+    height:50px;
+    width: 50px;
     position:absolute;
     background-color: yellow;
     border-radius: 100%;
     transition: all .3s;
 }
 .c4{
-    height:100px;
-    width: 100px;
+    height:50px;
+    width: 50px;
     position:absolute;
     background-color: green;
     border-radius: 100%;
     transition: all .4s;
+    opacity: 0;
 }
 .c5{
-    height:100px;
-    width: 100px;
+    height:50px;
+    width: 50px;
     position:absolute;
     background-color: blue;
     border-radius: 100%;
     transition: all .5s;
+    opacity: 0;
 }
 .c6{
-    height:100px;
-    width: 100px;
+    height:50px;
+    width: 50px;
     position:absolute;
     background-color: indigo;
     border-radius: 100%;
     transition: all .6s;
+    opacity: 0;
 }
 .c7{
-    height:100px;
-    width: 100px;
+    height:50px;
+    width: 50px;
     position:absolute;
     background-color: violet;
     border-radius: 100%;
     transition: all .7s;
+    opacity: 0;
 }
 .insect{
     height: 50px;
     width: 50px;
 }
 .i1{
-    position: relative;
+    position: absolute;
     top: 50%;
     left: 40%;
     opacity: 1;
@@ -140,7 +145,7 @@ body{
     transform: rotate();
 }
 .i2{
-    position: relative;
+    position: absolute;
     top: 20%;
     left: 33%;
     opacity: 1;
@@ -148,21 +153,23 @@ body{
     transform: rotate();
 }
 .i3{
-    position: relative;
+    position: absolute;
     top: 70%;
     left: 60%;
     transition: all .5s;
     transform: rotate();
 }
 .i4{
-    position: relative;
+    position: absolute;
     top: 22%;
     left: 44%;
     transition: all .5s;
     transform: rotate();
 }
+
+
 button{
-   display: relative;
+    position: absolute;
     background-color: blueviolet;
     top: 500px;
 }
@@ -170,6 +177,16 @@ button:hover{
     color: blue;
 }
 table{
-    position: relative;
+    position: absolute;
     top: 80%;
+    background-color: aquamarine;
 }
+
+header{
+    position: absolute;
+    left: 40vw;
+    font-family: cursive;
+    color: white;
+    background-image:linear-gradient(to right, red,orange,yellow,green,blue,indigo,violet);;
+}
+
