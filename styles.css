@@ -4,6 +4,7 @@
     background-image: url("https://www.scotts.com/sites/g/files/oydgjc106/files/styles/scotts_asset_image_720_440/public/asset_images/photo_14598%20%281%29.jpg?itok=FmwtvQgo");
     height: 100vh;
     width:100vw;
+    top: 0%;
 } 
 body{
     height: 100vh;
@@ -18,7 +19,6 @@ body{
     border-radius: 100%;
     top: 2%;
     left: 2%;
-    transition: all .1s;
 
 }
 .c2{
@@ -29,7 +29,7 @@ body{
     border-radius: 100%;
     top: 1%;
     left:1%;
-    transition: all .2s;
+    transition: all .1s;
 }
 .c3{
     height:50px;
@@ -37,7 +37,7 @@ body{
     position:absolute;
     background-color: yellow;
     border-radius: 100%;
-    transition: all .3s;
+    transition: all .2s;
 }
 .c4{
     height:50px;
@@ -45,7 +45,7 @@ body{
     position:absolute;
     background-color: green;
     border-radius: 100%;
-    transition: all .4s;
+    transition: all .3s;
     opacity: 0;
 }
 .c5{
@@ -54,7 +54,7 @@ body{
     position:absolute;
     background-color: blue;
     border-radius: 100%;
-    transition: all .5s;
+    transition: all .4s;
     opacity: 0;
 }
 .c6{
@@ -63,7 +63,7 @@ body{
     position:absolute;
     background-color: indigo;
     border-radius: 100%;
-    transition: all .6s;
+    transition: all .5s;
     opacity: 0;
 }
 .c7{
@@ -72,8 +72,11 @@ body{
     position:absolute;
     background-color: violet;
     border-radius: 100%;
-    transition: all .7s;
+    transition: all .6s;
     opacity: 0;
+}
+.circles{
+   box-shadow: 3px 3px 3px white; 
 }
 .insect{
     height: 50px;
