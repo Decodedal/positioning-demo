@@ -53,6 +53,7 @@ for (var i = 0; i < btns.length; i++) {
 	btns[i].addEventListener("mouseover", function (event) {
 		event.target.style.opacity = "0";
     event.target.style.transform = "rotate(360deg)";
+    event.target.style.width = "0";
     document.querySelector("#score").innerHTML =  score += 50;
     document.querySelector("#bugs").innerHTML = bugs +=1;
     reveal();
@@ -65,7 +66,8 @@ for (var i = 0; i < bird.length; i++) {
 	bird[i].addEventListener("mouseover", function (){
     lifeLeft.innerHTML = lifes -= 1;
     if (lifes <= 0){
-        document.querySelector(".gameover").style.display = "flex"
+        document.querySelector(".gameover").style.display = "flex";
+        document.querySelector("#highscore").innerHTML = "HighScore: "+ score;
     }    
 }
     )
@@ -78,6 +80,7 @@ playAgain.addEventListener("click",function(){
         let posB = getRandomInt(10,90);
         let birA = getRandomInt(10,90);
         let birB = getRandomInt(10,90);
+        btns[i].style.width = "50px";
         btns[i].style.opacity = "1";
         btns[i].style.transform = "rotate(0deg)"
         btns[i].style.top = posA + "%" 
